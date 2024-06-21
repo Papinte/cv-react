@@ -1,4 +1,5 @@
 import Nav from './pages/header/Nav';
+import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
@@ -6,6 +7,9 @@ function App() {
       <header>
         <Nav />
       </header>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }

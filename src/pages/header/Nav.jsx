@@ -21,7 +21,7 @@ const Nav = () => {
                             <NavLink className="nav-link text-uppercase" to="/">Accueil</NavLink>
                             </li>
                             <li className="nav-item">
-                            <NavLink className="nav-link text-uppercase" to="/Service">Service</NavLink>
+                            <NavLink className="nav-link text-uppercase" to="/Service">Services</NavLink>
                             </li>
                             <li className="nav-item">
                             <NavLink className="nav-link text-uppercase" to="/Realisation">Réalisations</NavLink>
@@ -30,7 +30,7 @@ const Nav = () => {
                             <NavLink className="nav-link text-uppercase" to="/Blog">Blog</NavLink>
                             </li>
                             <li className="nav-item">
-                            <NavLink className="nav-link text-uppercase" to="/Contact">Contactez moi</NavLink>
+                            <NavLink className="nav-link text-uppercase" to="/Contact">me contacter</NavLink>
                             </li>
                         </ul>
                     </div> 
