@@ -5,7 +5,6 @@ import Contact from '../Contact/Contact';
 import Realisation from '../realisation/Realisation';
 import Service from '../service/Service';
 
-
 const Nav = () => {
     return(
         <header>
@@ -44,6 +43,7 @@ const Nav = () => {
                 <Route path='/Blog' element={<Blog />}></Route>
                 <Route path='/Contact' element={<Contact />}></Route>
             </Routes>
+
 
         </header>
     )
