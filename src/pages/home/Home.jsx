@@ -1,11 +1,7 @@
 import './Home.css'
-import {NavLink} from "react-router-dom";
-
-
 
 const Home = () => {
     return (
-
             <body>
                 <div>
                     <img src="/images/Home/hero-bg.jpg" className="banner img-fluid" alt="Développeur web devant l'ordinateur" />
@@ -13,9 +9,9 @@ const Home = () => {
                 <div className="container text-center position-absolute top-50 start-50 translate-middle">
                     <h1 className="display-1">Bonjour, je suis John Doe</h1>
                     <h2>Développeur web full stack</h2>
-                    <NavLink to="/Blog" className="btn btn-primary">En savoir plus</NavLink>
+                    <a href="#about" className="btn btn-primary">En savoir plus</a>
                 </div>
-                <div className="about container row mx-auto my-5 rounded p-5 shadow-lg p-3 mb-5 bg-body rounded">
+                <div id="about" className="about container row mx-auto my-5 rounded p-5 shadow-lg p-3 mb-5 bg-body rounded">
                     <div className="col-md-6">
                         <h3 class="pb-2 mb-4 border-bottom border-primary border-2">À propos</h3>
                         <p>Passioné par l'informatique et les nouvelles technologies, j'ai suivi
