@@ -1,16 +1,14 @@
+import Header from "../header/Header";
+
 const Service = () => {
   return (
     <div>
-      <img
-        className="img-fluid"
-        src="/images/Services/banner.jpg"
-        alt="Bannière bleu"
-      />
-      <div className="text-center">
-        <h1 className="text-uppercase">mon offre de services</h1>
-        <h2>Voici les prestations sur lesquelles je peux intervenir.</h2>
-        <hr className="my-4 border-primary border-2 w-25 mx-auto opacity-100" />
-      </div>
+        <Header
+            title="mon offre de services"
+            subtitle="Voici les prestations sur lesquelles je peux intervenir."
+            imageUrl="/images/Blog/banner.jpg"
+            />
+      
       <div className="container">
         <div className="row mx-auto p-2">
           <div className="col-12 col-md-4 col-lg-4 mb-4">
