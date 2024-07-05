@@ -4,6 +4,7 @@ import Blog from '../blog/Blog';
 import Contact from '../Contact/Contact';
 import Realisation from '../realisation/Realisation';
 import Service from '../service/Service';
+import Mention from '../mention/Mention';
 
 const Nav = () => {
     return(
@@ -31,6 +32,9 @@ const Nav = () => {
                             <li className="nav-item">
                             <NavLink className="nav-link text-uppercase" to="/Contact">me contacter</NavLink>
                             </li>
+                            <li className="nav-item">
+                            <NavLink className="nav-link text-uppercase" to="/Mention">Mention</NavLink>
+                            </li>
                         </ul>
                     </div> 
                 </div>
@@ -42,6 +46,7 @@ const Nav = () => {
                 <Route path='/Realisation' element={<Realisation />}></Route>
                 <Route path='/Blog' element={<Blog />}></Route>
                 <Route path='/Contact' element={<Contact />}></Route>
+                <Route path='/Mention' element={<Mention />}></Route>
             </Routes>
 
 
