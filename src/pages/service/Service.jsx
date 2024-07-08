@@ -1,4 +1,6 @@
 import Header from "../header/Header";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileCode, faTv, faMagnifyingGlassDollar } from '@fortawesome/free-solid-svg-icons';
 
 const Service = () => {
   return (
@@ -13,12 +15,7 @@ const Service = () => {
         <div className="row mx-auto p-2">
           <div className="col-12 col-md-4 col-lg-4 mb-4">
             <div className="card text-center" style={{ width: "20rem" }}>
-              <img
-                src="/images/Services/fichier.png"
-                className="card-img-top mx-auto mt-3"
-                style={{ width: "20%" }}
-                alt="icone fichier "
-              />
+            <FontAwesomeIcon icon={faTv} style={{color: "#0084ff", fontSize: "3rem"}} />
               <div class="card-body">
                 <h5 class="card-title">UX Design</h5>
                 <p class="card-text">
@@ -31,12 +28,7 @@ const Service = () => {
           </div>
           <div className="col-12 col-md-4 col-lg-4 mb-4">
             <div className="card text-center" style={{ width: "20rem" }}>
-              <img
-                src="/images/Services/loupe.png"
-                className="card-img-top mx-auto mt-3"
-                style={{ width: "20%" }}
-                alt="Icone d'une loupe"
-              />
+            <FontAwesomeIcon icon={faFileCode} style={{color: "#0084ff", fontSize: "3rem"}} />
               <div class="card-body">
                 <h5 class="card-title text-uppercase">développement web</h5>
                 <p class="card-text">
@@ -49,12 +41,7 @@ const Service = () => {
 
           <div className="col-12 col-md-4 col-lg-4 mb-4">
             <div className="card text-center" style={{ width: "20rem" }}>
-              <img
-                src="/images/Services/ordinateur.png"
-                className="card-img-top mx-auto mt-3"
-                style={{ width: "20%" }}
-                alt="Icone d'un écran d'ordinateur"
-              />
+            <FontAwesomeIcon icon={faMagnifyingGlassDollar} style={{color: "#0084ff", fontSize: "3rem"}} />
               <div class="card-body">
                 <h5 class="card-title text-uppercase">référencement</h5>
                 <p class="card-text">
