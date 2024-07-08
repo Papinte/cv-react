@@ -1,7 +1,33 @@
 import "./Contact.css";
+import React, { useState } from 'react';
 
-const Contact = () => {
-  return (
+function Contact () {
+  // Déclaration des états pour chaque champ du formulaire
+  const [nom, setNom] = useState('');
+  const [email, setEmail] = useState('');
+  const [telephone, setTelephone] = useState('');
+  const [objet, setObjet] = useState('');
+  const [message, setMessage] = useState('');
+
+  // Gestionnaire de soumission du formulaire
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Vérification que tous les champs sont remplis
+    if (!nom || !email || !telephone || !objet || !message) {
+      alert('Veuillez remplir tous les champs');
+      return;
+    }
+    // Traitement du formulaire ici (ex. envoyer les données à un serveur)
+    console.log({ nom, email, telephone, objet, message });
+    // Réinitialisation des champs du formulaire
+    setNom('');
+    setEmail('');
+    setTelephone('');
+    setObjet('');
+    setMessage('');
+  }
+
+return (
     <div>
       <div>
         <div className="overlay"></div>
@@ -27,7 +53,7 @@ const Contact = () => {
           <h3 className="pb-2 mb-4 border-bottom border-primary border-2">
             Formulaire de contact
           </h3>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div class="mb-3">
               <label for="nom" class="form-label visually-hidden">
                 Nom
@@ -37,6 +63,8 @@ const Contact = () => {
                 class="form-control"
                 id="nom"
                 placeholder="Votre nom"
+                value={nom}
+                onChange={(e) => setNom(e.target.value)}
               />
             </div>
             <div class="mb-3">
@@ -48,6 +76,8 @@ const Contact = () => {
                 class="form-control"
                 id="email"
                 placeholder="Votre adresse email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div class="mb-3">
@@ -59,6 +89,8 @@ const Contact = () => {
                 class="form-control"
                 id="telephone"
                 placeholder="Votre numéro de téléphone"
+                value={telephone}
+                onChange={(e) => setTelephone(e.target.value)}
               />
             </div>
             <div class="mb-3">
@@ -70,6 +102,8 @@ const Contact = () => {
                 class="form-control"
                 id="objet"
                 placeholder="Sujet"
+                value={objet}
+                onChange={(e) => setObjet(e.target.value)}
               />
             </div>
             <div class="mb-3">
@@ -81,6 +115,8 @@ const Contact = () => {
                 id="message"
                 rows="5"
                 placeholder="Votre message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <div class="d-flex justify-content-center">
@@ -96,33 +132,10 @@ const Contact = () => {
           </h3>
           <div>
             <p className="text-capitalize">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-geo-alt-fill"
-                viewBox="0 0 16 16"
-              >
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-              </svg>{" "}
-              40 rue laure diebold, 69009 lyon, france
+            <i class="bi bi-geo-alt-fill"></i> 40 rue laure diebold, 69009 lyon, france
             </p>
             <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-telephone-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
-                />
-              </svg>{" "}
-              06 20 30 40 50
+            <i class="bi bi-phone"></i> 06 20 30 40 50
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.6269657540006!2d4.796403975250969!3d45.77866571240359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e0!3m2!1sfr!2sfr!4v1720023535518!5m2!1sfr!2sfr"

@@ -1,11 +1,23 @@
-footer{
-    background-color: #EEE ;
+li{
+    list-style: none;
 }
-h5{
-    color: #1e1e1e ;
-    font-weight: 600;
+.icone-link{
+    width: 24px;
 }
-p{
+.link-style{
     color: #444;
-    font-weight: 400;
+    text-decoration: none;
+}
+.link-style:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.copyright{
+    color:  rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+.button-back{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none
 }
