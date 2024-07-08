@@ -1,8 +1,9 @@
+import "../../index.css";
 import "./Home.css";
 
 const Home = () => {
   return (
-    <div>
+    <body>
       <picture>
         <source media="(min-width: 1200px)" srcSet="/images/Home/hero-bg.jpg" />
         <source
@@ -127,7 +128,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </body>
   );
 };
 

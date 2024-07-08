@@ -1,33 +1,39 @@
+import "../../index.css";
 import "./Contact.css";
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLocationDot,
+  faMobileButton,
+} from "@fortawesome/free-solid-svg-icons";
 
-function Contact () {
+function Contact() {
   // Déclaration des états pour chaque champ du formulaire
-  const [nom, setNom] = useState('');
-  const [email, setEmail] = useState('');
-  const [telephone, setTelephone] = useState('');
-  const [objet, setObjet] = useState('');
-  const [message, setMessage] = useState('');
+  const [nom, setNom] = useState("");
+  const [email, setEmail] = useState("");
+  const [telephone, setTelephone] = useState("");
+  const [objet, setObjet] = useState("");
+  const [message, setMessage] = useState("");
 
   // Gestionnaire de soumission du formulaire
   const handleSubmit = (e) => {
     e.preventDefault();
     // Vérification que tous les champs sont remplis
     if (!nom || !email || !telephone || !objet || !message) {
-      alert('Veuillez remplir tous les champs');
+      alert("Veuillez remplir tous les champs");
       return;
     }
     // Traitement du formulaire ici (ex. envoyer les données à un serveur)
     console.log({ nom, email, telephone, objet, message });
     // Réinitialisation des champs du formulaire
-    setNom('');
-    setEmail('');
-    setTelephone('');
-    setObjet('');
-    setMessage('');
-  }
+    setNom("");
+    setEmail("");
+    setTelephone("");
+    setObjet("");
+    setMessage("");
+  };
 
-return (
+  return (
     <div>
       <div>
         <div className="overlay"></div>
@@ -43,16 +49,16 @@ return (
       >
         <div className="text-center">
           <h1 className="text-uppercase">me contacter</h1>
-          <h2>
+          <p>
             Pour me contacter en vue d'un entretien ou d'une futur
             collaboration, merci de remplir le formulaire de contact.
-          </h2>
+          </p>
           <hr className="my-4 border-primary border-2 w-25 mx-auto opacity-100" />
         </div>
         <div className="col-md-6">
-          <h3 className="pb-2 mb-4 border-bottom border-primary border-2">
+          <h2 className="pb-2 mb-4 border-bottom border-primary border-2">
             Formulaire de contact
-          </h3>
+          </h2>
           <form onSubmit={handleSubmit}>
             <div class="mb-3">
               <label for="nom" class="form-label visually-hidden">
@@ -127,15 +133,23 @@ return (
           </form>
         </div>
         <div className="col-md-6">
-          <h3 className="pb-2 mb-4 border-bottom border-primary border-2">
+          <h2 className="pb-2 mb-4 border-bottom border-primary border-2">
             Mes coordonnées
-          </h3>
+          </h2>
           <div>
             <p className="text-capitalize">
-            <i class="bi bi-geo-alt-fill"></i> 40 rue laure diebold, 69009 lyon, france
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                style={{ color: "#444444" }}
+              />{" "}
+              40 rue laure diebold, 69009 lyon, france
             </p>
             <p>
-            <i class="bi bi-phone"></i> 06 20 30 40 50
+              <FontAwesomeIcon
+                icon={faMobileButton}
+                style={{ color: "#444444" }}
+              />{" "}
+              06 20 30 40 50
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.6269657540006!2d4.796403975250969!3d45.77866571240359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e0!3m2!1sfr!2sfr!4v1720023535518!5m2!1sfr!2sfr"
@@ -152,6 +166,6 @@ return (
       </div>
     </div>
   );
-};
+}
 
 export default Contact;

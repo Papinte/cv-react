@@ -1,9 +1,10 @@
+import "../../index.css";
 import Header from "../header/Header";
 import { Link } from "react-router-dom";
 
 const Realisation = () => {
   return (
-    <div>
+    <div className="total">
       <Header
         title="Portfolio"
         subtitle="Voici quelques-unes de mes réalisations"

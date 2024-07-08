@@ -11,11 +11,10 @@ const Service = () => {
   return (
     <div>
       <Header
-        title="Portfolio"
-        subtitle="Voici quelques-unes de mes réalisations"
+        title="MON OFFRE DE SERVICES"
+        subtitle="Voici les prestations sur lesquelles je peux intervenir."
         imageUrlBase="/images/Header/banner"
       />
-
       <div className="container">
         <div className="row mx-auto p-2">
           <div className="col-12 col-md-4 col-lg-4 mb-4">
@@ -27,7 +26,7 @@ const Service = () => {
                 className="service-icone"
                 icon={faTv}
                 style={{
-                  color: "#0084ff",
+                  color: "#0d6efd",
                   fontSize: "3rem",
                   marginTop: "20px",
                 }}
@@ -51,7 +50,7 @@ const Service = () => {
                 className="service-icone"
                 icon={faFileCode}
                 style={{
-                  color: "#0084ff",
+                  color: "#0d6efd",
                   fontSize: "3rem",
                   marginTop: "20px",
                 }}
@@ -65,7 +64,6 @@ const Service = () => {
               </div>
             </div>
           </div>
-
           <div className="col-12 col-md-4 col-lg-4 mb-4">
             <div
               className="card text-center h-100 d-flex flex-column service-card"
@@ -75,7 +73,7 @@ const Service = () => {
                 className="service-icone"
                 icon={faMagnifyingGlassDollar}
                 style={{
-                  color: "#0084ff",
+                  color: "#0d6efd",
                   fontSize: "3rem",
                   marginTop: "20px",
                 }}
