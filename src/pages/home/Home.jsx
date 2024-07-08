@@ -1,15 +1,21 @@
+import "../../index.css";
 import "./Home.css";
 
 const Home = () => {
   return (
     <body>
-      <div>
+      <picture>
+        <source media="(min-width: 1200px)" srcSet="/images/Home/hero-bg.jpg" />
+        <source
+          media="(min-width: 768px)"
+          srcSet="/images/Home/hero-bg-tablette.jpg"
+        />
         <img
-          src="/images/Home/hero-bg.jpg"
+          src="/images/Home/hero-bg-mobile.jpg"
           className="banner img-fluid"
           alt="Développeur web devant l'ordinateur"
         />
-      </div>
+      </picture>
       <div
         id="text-banner"
         className="container text-center position-absolute top-50 start-50 translate-middle"
@@ -31,15 +37,14 @@ const Home = () => {
           <p>
             Passioné par l'informatique et les nouvelles technologies, j'ai
             suivi une formation d'
-            <span className="fw-bold">intégrateur développeur web</span> au CEF.
-            Au cours de cette formation, j'ai pu acquérir des bases solides pour
-            travailler dans le domaine du{" "}
-            <span className="fw-bold">Développement web.</span>
+            <strong>intégrateur développeur web</strong> au CEF. Au cours de
+            cette formation, j'ai pu acquérir des bases solides pour travailler
+            dans le domaine du <strong>Développement web.</strong>
           </p>
           <p>
             Basé à Lyon je suis en recherche d'une alternance au sein d'une
             agence digitale pour consolider ma formation de{" "}
-            <span className="fw-bold">développeur web full stack.</span>
+            <strong>développeur web full stack.</strong>
           </p>
           <p>
             J'accorde une attention particulière à la qualité du code que
@@ -47,11 +52,21 @@ const Home = () => {
           </p>
         </div>
         <div className="col-md-6">
-          <img
-            className="img-fluid rounded"
-            src="/images/Home/john-doe-about.jpg"
-            alt=""
-          />
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcSet="/images/Home/john-doe-about-mobile.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcSet="/images/Home/john-doe-about.jpg"
+            />
+            <img
+              className="img-fluid rounded"
+              src="/images/Home/john-doe-about.jpg"
+              alt="John doe en train de travailler"
+            />
+          </picture>
           <h3>Mes compétences</h3>
           <p>HTML5 90%</p>
           <div
