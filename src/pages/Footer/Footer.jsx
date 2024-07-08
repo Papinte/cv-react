@@ -1,6 +1,8 @@
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
         useEffect(() => {
@@ -71,27 +73,27 @@ const Footer = () => {
             <ul>
               <li>
                 <NavLink className="link-style" to="/">
-                  <i class="bi bi-chevron-right"></i> Accueil
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Accueil
                 </NavLink>
               </li>
               <li>
                 <NavLink className="link-style" to="#about">
-                  <i class="bi bi-chevron-right"></i> A propos
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> A propos
                 </NavLink>
               </li>
               <li>
                 <NavLink className="link-style" to="/Service">
-                  <i class="bi bi-chevron-right"></i> Services
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Services
                 </NavLink>
               </li>
               <li>
                 <NavLink className="link-style" to="/Contact">
-                  <i class="bi bi-chevron-right"></i> Me contacter
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Me contacter
                 </NavLink>
               </li>
               <li>
                 <NavLink className="link-style" to="/Mention">
-                  <i class="bi bi-chevron-right"></i> Mentions légales
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Mentions légales
                 </NavLink>
               </li>
             </ul>
@@ -101,17 +103,17 @@ const Footer = () => {
             <ul>
               <li>
                 <NavLink className="link-style" to="/Realisation">
-                  <i class="bi bi-chevron-right"></i> Fresh food
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Fresh food
                 </NavLink>
               </li>
               <li>
                 <NavLink className="link-style" to="/Realisation">
-                  <i class="bi bi-chevron-right"></i> Restaurant Akira
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Restaurant Akira
                 </NavLink>
               </li>
               <li>
                 <NavLink className="link-style" to="/Realisation">
-                  <i class="bi bi-chevron-right"></i> Espace bien-être
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Espace bien-être
                 </NavLink>
               </li>
             </ul>
@@ -121,18 +123,18 @@ const Footer = () => {
             <ul>
               <li>
                 <NavLink className="link-style" to="/Blog">
-                  <i class="bi bi-chevron-right"></i> Coder son site en HTML/CSS
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Coder son site en HTML/CSS
                 </NavLink>
               </li>
               <li>
                 <NavLink className="link-style" to="/Blog">
-                  <i class="bi bi-chevron-right"></i> Vendre ses produits sur le
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Vendre ses produits sur le
                   web
                 </NavLink>
               </li>
               <li>
                 <NavLink className="link-style" to="/Blog">
-                  <i class="bi bi-chevron-right"></i> Se positionner sur Google
+                <FontAwesomeIcon icon={faChevronRight} style={{color: "#0084ff",}} /> Se positionner sur Google
                 </NavLink>
               </li>
             </ul>

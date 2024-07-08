@@ -2,7 +2,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <body>
+    <div>
       <div>
         <img
           src="/images/Home/hero-bg.jpg"
@@ -31,15 +31,14 @@ const Home = () => {
           <p>
             Passioné par l'informatique et les nouvelles technologies, j'ai
             suivi une formation d'
-            <span className="fw-bold">intégrateur développeur web</span> au CEF.
-            Au cours de cette formation, j'ai pu acquérir des bases solides pour
-            travailler dans le domaine du{" "}
-            <span className="fw-bold">Développement web.</span>
+            <strong>intégrateur développeur web</strong> au CEF. Au cours de
+            cette formation, j'ai pu acquérir des bases solides pour travailler
+            dans le domaine du <strong>Développement web.</strong>
           </p>
           <p>
             Basé à Lyon je suis en recherche d'une alternance au sein d'une
             agence digitale pour consolider ma formation de{" "}
-            <span className="fw-bold">développeur web full stack.</span>
+            <strong>développeur web full stack.</strong>
           </p>
           <p>
             J'accorde une attention particulière à la qualité du code que
@@ -113,7 +112,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 
