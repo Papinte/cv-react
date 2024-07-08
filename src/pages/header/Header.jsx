@@ -1,7 +1,21 @@
-const Header = ({ title, subtitle, imageUrl }) => {
+const Header = ({ title, subtitle, imageUrlBase }) => {
   return (
     <div>
-      <img className="img-fluid" src={imageUrl} alt="Bannière bleu" />
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcSet={`${imageUrlBase}.jpg`}
+        />
+        <source
+          media="(min-width: 768px)"
+          srcSet={`${imageUrlBase}-tablette.jpg`}
+        />
+        <img
+          src={`${imageUrlBase}-mobile.jpg`}
+          className="img-fluid"
+          alt="Bannière bleu"
+        />
+      </picture>
       <div className="text-center">
         <h1 className="text-uppercase">{title}</h1>
         <h2>{subtitle}</h2>

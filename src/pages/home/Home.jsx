@@ -3,13 +3,19 @@ import "./Home.css";
 const Home = () => {
   return (
     <div>
-      <div>
+        <picture>
+          <source
+          media="(min-width: 1200px)"
+          srcSet="/images/Home/hero-bg.jpg" />
+          <source
+          media="(min-width: 768px)"
+          srcSet="/images/Home/hero-bg-tablette.jpg" />
         <img
-          src="/images/Home/hero-bg.jpg"
+          src="/images/Home/hero-bg-mobile.jpg"
           className="banner img-fluid"
           alt="Développeur web devant l'ordinateur"
         />
-      </div>
+        </picture>
       <div
         id="text-banner"
         className="container text-center position-absolute top-50 start-50 translate-middle"

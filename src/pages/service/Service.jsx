@@ -11,9 +11,9 @@ const Service = () => {
   return (
     <div>
       <Header
-        title="mon offre de services"
-        subtitle="Voici les prestations sur lesquelles je peux intervenir."
-        imageUrl="/images/Blog/banner.jpg"
+        title="Portfolio"
+        subtitle="Voici quelques-unes de mes réalisations"
+        imageUrlBase="/images/Header/banner"
       />
 
       <div className="container">

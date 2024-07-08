@@ -1,12 +1,13 @@
 import Header from "../header/Header";
+import { Link } from "react-router-dom";
 
 const Realisation = () => {
   return (
     <div>
       <Header
-        title="portfolio"
+        title="Portfolio"
         subtitle="Voici quelques-unes de mes réalisations"
-        imageUrl="/images/Blog/banner.jpg"
+        imageUrlBase="/images/Header/banner"
       />
       <div className="container">
         <div className="row mx-auto p-2">
@@ -22,9 +23,9 @@ const Realisation = () => {
                 <p class="card-text">
                   Réalisation d'un site avec commande en ligne.
                 </p>
-                <a href="#" class="btn btn-outline-primary">
+                <Link to="/Realisation" className="btn btn-outline-primary">
                   Voir
-                </a>
+                </Link>
               </div>
               <div class="card-footer">
                 <small>Site réalisé avec PHP et MySQL</small>
@@ -40,12 +41,10 @@ const Realisation = () => {
               />
               <div class="card-body">
                 <h5 class="card-title">Restaurant Akira</h5>
-                <p class="card-text">
-                  Réalisation d'un site vitrine.
-                </p>
-                <a href="#" class="btn btn-outline-primary">
+                <p class="card-text">Réalisation d'un site vitrine.</p>
+                <Link to="/Realisation" className="btn btn-outline-primary">
                   Voir
-                </a>
+                </Link>
               </div>
               <div class="card-footer">
                 <small>Site réalisé avec WordPress</small>
@@ -64,9 +63,9 @@ const Realisation = () => {
                 <p class="card-text">
                   Réalisation d'un site vitrine pour un praticien de bien-être.
                 </p>
-                <a href="#" class="btn btn-outline-primary">
+                <Link to="/Realisation" className="btn btn-outline-primary">
                   Voir
-                </a>
+                </Link>
               </div>
               <div class="card-footer">
                 <small>Site réalisé en HTML/CSS</small>
