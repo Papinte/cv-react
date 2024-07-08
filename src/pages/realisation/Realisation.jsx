@@ -16,19 +16,19 @@ const Realisation = () => {
             <div className="card text-center" style={{ width: "20rem" }}>
               <img
                 src="/images/Portfolio/fresh-food.jpg"
-                class="card-img-top"
+                className="card-img-top"
                 alt="Panier de légumes"
               />
-              <div class="card-body">
-                <h5 class="card-title">Fresh food</h5>
-                <p class="card-text">
+              <div className="card-body">
+                <h5 className="card-title">Fresh food</h5>
+                <p className="card-text">
                   Réalisation d'un site avec commande en ligne.
                 </p>
                 <Link to="/Realisation" className="btn btn-outline-primary">
                   Voir
                 </Link>
               </div>
-              <div class="card-footer">
+              <div className="card-footer">
                 <small>Site réalisé avec PHP et MySQL</small>
               </div>
             </div>
@@ -37,17 +37,17 @@ const Realisation = () => {
             <div className="card text-center" style={{ width: "20rem" }}>
               <img
                 src="/images/Portfolio/restaurant-japonais.jpg"
-                class="card-img-top"
+                className="card-img-top"
                 alt="Sushis sur un plateau"
               />
-              <div class="card-body">
-                <h5 class="card-title">Restaurant Akira</h5>
-                <p class="card-text">Réalisation d'un site vitrine.</p>
+              <div className="card-body">
+                <h5 className="card-title">Restaurant Akira</h5>
+                <p className="card-text">Réalisation d'un site vitrine.</p>
                 <Link to="/Realisation" className="btn btn-outline-primary">
                   Voir
                 </Link>
               </div>
-              <div class="card-footer">
+              <div className="card-footer">
                 <small>Site réalisé avec WordPress</small>
               </div>
             </div>
@@ -56,19 +56,19 @@ const Realisation = () => {
             <div className="card text-center" style={{ width: "20rem" }}>
               <img
                 src="/images/Portfolio/espace-bien-etre.jpg"
-                class="card-img-top"
+                className="card-img-top"
                 alt="Buste de Bouddha avec des galets à côté"
               />
-              <div class="card-body">
-                <h5 class="card-title">Espace bien-être</h5>
-                <p class="card-text">
+              <div className="card-body">
+                <h5 className="card-title">Espace bien-être</h5>
+                <p className="card-text">
                   Réalisation d'un site vitrine pour un praticien de bien-être.
                 </p>
                 <Link to="/Realisation" className="btn btn-outline-primary">
                   Voir
                 </Link>
               </div>
-              <div class="card-footer">
+              <div className="card-footer">
                 <small>Site réalisé en HTML/CSS</small>
               </div>
             </div>

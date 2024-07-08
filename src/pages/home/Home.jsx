@@ -3,7 +3,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <body>
+    <div>
       <picture>
         <source media="(min-width: 1200px)" srcSet="/images/Home/hero-bg.jpg" />
         <source
@@ -70,7 +70,7 @@ const Home = () => {
           <h3>Mes compétences</h3>
           <p>HTML5 90%</p>
           <div
-            class="progress"
+            className="progress"
             role="progressbar"
             aria-label="Basic example"
             aria-valuenow="90"
@@ -84,51 +84,51 @@ const Home = () => {
           </div>
           <p>CSS3 80%</p>
           <div
-            class="progress"
+            className="progress"
             role="progressbar"
             aria-label="Basic example"
             aria-valuenow="80"
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            <div class="progress-bar bg-info" style={{ width: "80%" }}></div>
+            <div className="progress-bar bg-info" style={{ width: "80%" }}></div>
           </div>
           <p>JAVASCRIPT 70%</p>
           <div
-            class="progress"
+            className="progress"
             role="progressbar"
             aria-label="Basic example"
             aria-valuenow="70"
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            <div class="progress-bar bg-warning" style={{ width: "70%" }}></div>
+            <div className="progress-bar bg-warning" style={{ width: "70%" }}></div>
           </div>
           <p>PHP 60%</p>
           <div
-            class="progress"
+            className="progress"
             role="progressbar"
             aria-label="Basic example"
             aria-valuenow="60"
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            <div class="progress-bar bg-success" style={{ width: "60%" }}></div>
+            <div className="progress-bar bg-success" style={{ width: "60%" }}></div>
           </div>
           <p>REACT 50%</p>
           <div
-            class="progress"
+            className="progress"
             role="progressbar"
             aria-label="Basic example"
             aria-valuenow="50"
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            <div class="progress-bar" style={{ width: "50%" }}></div>
+            <div className="progress-bar" style={{ width: "50%" }}></div>
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 

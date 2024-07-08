@@ -60,64 +60,64 @@ function Contact() {
             Formulaire de contact
           </h2>
           <form onSubmit={handleSubmit}>
-            <div class="mb-3">
-              <label for="nom" class="form-label visually-hidden">
+            <div className="mb-3">
+              <label for="nom" className="form-label visually-hidden">
                 Nom
               </label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="nom"
                 placeholder="Votre nom"
                 value={nom}
                 onChange={(e) => setNom(e.target.value)}
               />
             </div>
-            <div class="mb-3">
-              <label for="prenom" class="form-label visually-hidden">
+            <div className="mb-3">
+              <label for="prenom" className="form-label visually-hidden">
                 Votre adresse email
               </label>
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 id="email"
                 placeholder="Votre adresse email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div class="mb-3">
-              <label for="telephone" class="form-label visually-hidden">
+            <div className="mb-3">
+              <label for="telephone" className="form-label visually-hidden">
                 Vote numéro de téléphone
               </label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="telephone"
                 placeholder="Votre numéro de téléphone"
                 value={telephone}
                 onChange={(e) => setTelephone(e.target.value)}
               />
             </div>
-            <div class="mb-3">
-              <label for="objet" class="form-label visually-hidden">
+            <div className="mb-3">
+              <label for="objet" className="form-label visually-hidden">
                 Sujet
               </label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="objet"
                 placeholder="Sujet"
                 value={objet}
                 onChange={(e) => setObjet(e.target.value)}
               />
             </div>
-            <div class="mb-3">
-              <label for="message" class="form-label visually-hidden">
+            <div className="mb-3">
+              <label for="message" className="form-label visually-hidden">
                 Votre message
               </label>
               <textarea
-                class="form-control"
+                className="form-control"
                 id="message"
                 rows="5"
                 placeholder="Votre message"
@@ -125,7 +125,7 @@ function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
-            <div class="d-flex justify-content-center">
+            <div className="d-flex justify-content-center">
               <button type="submit" class="btn btn-primary">
                 Envoyer
               </button>
