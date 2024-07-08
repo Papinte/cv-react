@@ -3,19 +3,18 @@ import "./Home.css";
 const Home = () => {
   return (
     <div>
-        <picture>
-          <source
-          media="(min-width: 1200px)"
-          srcSet="/images/Home/hero-bg.jpg" />
-          <source
+      <picture>
+        <source media="(min-width: 1200px)" srcSet="/images/Home/hero-bg.jpg" />
+        <source
           media="(min-width: 768px)"
-          srcSet="/images/Home/hero-bg-tablette.jpg" />
+          srcSet="/images/Home/hero-bg-tablette.jpg"
+        />
         <img
           src="/images/Home/hero-bg-mobile.jpg"
           className="banner img-fluid"
           alt="Développeur web devant l'ordinateur"
         />
-        </picture>
+      </picture>
       <div
         id="text-banner"
         className="container text-center position-absolute top-50 start-50 translate-middle"
@@ -52,11 +51,21 @@ const Home = () => {
           </p>
         </div>
         <div className="col-md-6">
-          <img
-            className="img-fluid rounded"
-            src="/images/Home/john-doe-about.jpg"
-            alt=""
-          />
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcSet="/images/Home/john-doe-about-mobile.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcSet="/images/Home/john-doe-about.jpg"
+            />
+            <img
+              className="img-fluid rounded"
+              src="/images/Home/john-doe-about.jpg"
+              alt="John doe en train de travailler"
+            />
+          </picture>
           <h3>Mes compétences</h3>
           <p>HTML5 90%</p>
           <div
